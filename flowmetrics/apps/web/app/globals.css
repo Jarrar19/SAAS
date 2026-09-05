@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F7F8FA;
+  --surface: #FFFFFF;
+  --ink: #12151C;
+  --ink-muted: #5B6270;
+  --accent: #0F766E;
+  --border: #E4E7EC;
+}
+
+body {
+  color: var(--ink);
+  background-color: var(--background);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Subtle, clean scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F8FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D0D5DD;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #98A2B3;
+}
+
+/* TipTap rich text editor styling */
+.tiptap {
+  min-height: 220px;
+  outline: none;
+}
+.tiptap p {
+  margin-bottom: 0.75rem;
+}
+.tiptap h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #12151C;
+}
+.tiptap h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #12151C;
+}
+.tiptap ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.tiptap ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.tiptap blockquote {
+  border-left: 3px solid #0F766E;
+  padding-left: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  color: #5B6270;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+.tiptap pre {
+  background-color: #F1F5F9;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  font-family: monospace;
+  font-size: 0.875rem;
+  overflow-x: auto;
+  margin-bottom: 0.75rem;
+}
+

@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment variables
+.env
+.env*.local
+.env.production
+.env.staging
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
+.idea/
+.vscode/

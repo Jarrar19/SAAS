@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: flowmetrics-api
+    runtime: node
+    rootDir: flowmetrics/apps/api
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: CORS_ORIGIN
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
