@@ -12,8 +12,9 @@ This repository contains the complete full-stack implementation: a custom **Expr
   - Health Check: `https://saas-production-084a.up.railway.app/health`
   - Public API Plans: `https://saas-production-084a.up.railway.app/api/plans`
   - Public API Posts: `https://saas-production-084a.up.railway.app/api/posts`
-- **Database:** MongoDB Atlas (3-node replica set cluster)
-- **Frontend (Vercel):** *Pending Vercel deployment*
+- **Frontend Marketing Site + CMS (Vercel):** [https://flowmetrics-gamma.vercel.app](https://flowmetrics-gamma.vercel.app)
+  - Public Landing Page: [https://flowmetrics-gamma.vercel.app](https://flowmetrics-gamma.vercel.app)
+  - Admin CMS Portal: [https://flowmetrics-gamma.vercel.app/admin/login](https://flowmetrics-gamma.vercel.app/admin/login)
 
 ---
 
