@@ -6,6 +6,17 @@ This repository contains the complete full-stack implementation: a custom **Expr
 
 ---
 
+## 0. Live Hosted Deployments
+
+- **Backend REST API (Railway):** [https://saas-production-084a.up.railway.app](https://saas-production-084a.up.railway.app)
+  - Health Check: `https://saas-production-084a.up.railway.app/health`
+  - Public API Plans: `https://saas-production-084a.up.railway.app/api/plans`
+  - Public API Posts: `https://saas-production-084a.up.railway.app/api/posts`
+- **Database:** MongoDB Atlas (3-node replica set cluster)
+- **Frontend (Vercel):** *Pending Vercel deployment*
+
+---
+
 ## 1. Architecture Overview
 
 ```text
