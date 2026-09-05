@@ -33,13 +33,9 @@ export function createApp(): Application {
     });
   });
 
-  // Basic health check
+  // Basic health check (unauthenticated, unthrottled for Render health checks)
   app.get("/health", (req: Request, res: Response) => {
-    res.status(200).json({
-      status: "healthy",
-      timestamp: new Date().toISOString(),
-      service: "flowmetrics-api",
-    });
+    res.status(200).json({ status: "ok" });
   });
 
   // Public read-only routes mounted under /api
