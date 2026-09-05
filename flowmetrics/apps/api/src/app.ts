@@ -38,6 +38,12 @@ export function createApp(): Application {
     res.status(200).json({ status: "ok" });
   });
 
+  // Strix domain verification challenge endpoint
+  app.get("/.well-known/strix-verify.txt", (req: Request, res: Response) => {
+    res.setHeader("Content-Type", "text/plain");
+    res.status(200).send("strix-verify-0939e77d4b541d979f2aff9a45d42799");
+  });
+
   // Public read-only routes mounted under /api
   app.use("/api", publicRoutes);
 
